@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+}
+
+.background {
+    display: flex;
+}
+    .sqr {
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 9%;
+        animation: intro 1s;
+    }
+    .logo_text {
+        font-size: 30px;
+        color: rgb(148, 0, 148);
+    }
