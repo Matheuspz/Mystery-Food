@@ -1,5 +1,7 @@
 body {
     margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .background {
@@ -16,9 +18,47 @@ body {
     }
     .logo {
         width: 9%;
-        animation: intro 1s;
+        animation: sumir_logo 10s;
+        animation-delay: 15s;
+        animation-fill-mode: forwards;
     }
+
+        @keyframes sumir_logo {
+            from { transform: translateY(0vh);}
+            to { transform: translateY(-500vh);}
+        }
+
     .logo_text {
-        font-size: 30px;
         color: rgb(148, 0, 148);
+        font-weight: 600;
+        text-align: center;
+        font-size: 30px;
+        font-family: Hack, sans-serif;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #000, rgb(148, 0, 148), #000);
+        letter-spacing: 5px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: 5s 3 brilho linear, 20s sumir;
+        animation-fill-mode: forwards;
     }
+
+        @keyframes brilho {
+            0%
+            { background-position-x: -500%; }
+            
+            100% 
+            { background-position-x: 500%; }
+        }
+
+        @keyframes sumir {
+            0% {opacity: 1;}
+            20% {opacity: 1;}
+            40% {opacity: 1;}
+            60% {opacity: 1;}
+            80% {opacity: 1;}
+            100% {opacity: 0;}
+        }
