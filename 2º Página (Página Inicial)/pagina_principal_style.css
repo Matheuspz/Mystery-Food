@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+    .fundo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .cabecalho {
+            width: 90%;
+            height: 120px;
+            background-color: rgb(90, 90, 90);
+            display: flex;
+            flex-direction: row;
+        }
+
+            .cabecalho_esq{
+                width: 50%;
+                height: 120px;
+                background-color: rgb(95, 95, 95);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+                
+                .logo {
+                    height: 100px;
+                }
+
+                .button_inicio {
+                    width: 20%;
+                    height: 50px;
+                    font-size: 40px;
+                    border-radius: 5px;
+                }
+
+                    .button_inicio:hover {
+                        background-color: rgb(109, 109, 109);
+                    }
+                    .button_inicio:active {
+                        background-color: rgb(109, 109, 109);
+                        box-shadow: 0 5px #666;
+                        transform: translateY(4px);
+                    }
