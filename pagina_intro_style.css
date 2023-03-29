@@ -50,13 +50,13 @@ body {
         }*/
     
     .logo_text {
-        color: rgb(148, 0, 148);
+        color: rgb(200, 77, 0);
         font-weight: 600;
         text-align: center;
         font-size: 30px;
         font-family: Hack, sans-serif;
         text-transform: uppercase;
-        background: linear-gradient(90deg, #000, rgb(107, 2, 107), #000);
+        background: linear-gradient(90deg, #000, rgb(200, 77, 0), #000);
         letter-spacing: 5px;
         -webkit-background-clip: text;
         background-clip: text;
