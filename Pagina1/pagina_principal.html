@@ -7,6 +7,7 @@
     
     <title>Mystery Food - Página Inicial</title>
     <link rel="stylesheet" type="text/css" href="pagina_principal_style.css">
+    <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="fundo">
@@ -23,24 +24,65 @@
             </div>
         </div>
 
-        <div class="espacamento"></div>
+        
 
         <div class="info">
-            <div class="espacamento2"></div>
-            <div class="lema"> Permita-se experimentar algo novo. <br> Experimente as caixas misteriosas, uma supresa a cada compra </div>
-            <div class="espacamento3"></div>
-            <div class="compra">
-                <div class="info_info">
-                    <div class="caixas"> <img src="My_project-1-removebg-preview.png" class="logo_caixas"> </div>
-                    <br>
-                    <a href="pagina_principal.html" target="_self"> <input type="button" class="button_caixa" value="Ver caixas"> </a>
-                </div>
-            </div>
+            <div class="D1">
+    
+      <div class="cima">
+        Suporte: <input class="mensagem" type="text" id="mensagem">  <button class="botao_enviar" onclick="Enviar();">Enviar</button>
+      </div>
+    <div class="resposta" id="resposta">  </div>
+  </div>
+</body>
+
+<script>
+
+  topico = "sena/men";  // Variável que ficará no servidor MQTT
+
+  // Conexão:
+  client = new Paho.MQTT.Client("broker.hivemq.com", Number(8000), "");
+
+  // Funções executadas quando a conexão é perdida e quando uma mensagem chega:
+  client.onConnectionLost = ConexaoPerdida;
+  client.onMessageArrived = MensagemRecebida;
+
+  // Função chamada quando a conexão for realizada:
+  client.connect({onSuccess:Conectar});
+
+  // A função Conectar deve criar a variável (tópico) no computador remoto:
+  function Conectar() {
+    
+    client.subscribe(topico);  // Tópico (variável) criado no servidor MQTT
+    
+  }
+  
+  function ConexaoPerdida(responseObject) {
+    if (responseObject.errorCode !== 0) {
+      resposta.innerHTML += "Desconectado";
+    }
+  }
+
+  // Função executada quando a variável (tópico) no servidor receber uma mensagem:
+  function MensagemRecebida(message) {
+      resposta.innerHTML += "<br>" + message.payloadString;
+  }
+
+  function Enviar()
+  {
+    texto = mensagem.value;
+
+    message = new Paho.MQTT.Message(texto);
+    message.destinationName = topico;
+    client.send(message);
+  }
+
+</script>
             
         </div>
     </div>
 
-    <img src="dDADA.png">
+    
 
 </body>
 </html>
