@@ -15,48 +15,20 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /*animation: transition 3s;                      MUDAR PARA 3s 
-        animation-delay: 15s;                          MUDAR PARA 15s
-        animation-fill-mode: forwards; */
     }
-        /*@keyframes transition {
-            0% { background-color: black}
-            100% { background-color: rgb(33, 33, 33)}
-        }*/
-
 
     .logo {
         width: 9%;
-        /*animation: sumir_logo 5s;                MUDAR PARA 10s 
-        animation-delay: 10s;                     MUDAR PARA 15s 
-        animation-fill-mode: forwards;*/
     }
-
-        /*@keyframes sumir_logo {
-            from { transform: translateY(0vh);}
-            to { transform: translateY(-300vh);}
-        }*/
-
-    
-    /*.delay {
-        animation: sobe 10;                       MUDAR PARA 10s 
-        animation-delay: 15s;                     MUDAR PARA 15s 
-        animation-fill-mode: forwards;
-    }*/
-
-        /*@keyframes sobe {
-            0% { transform: translateY(0vh);}
-            100% { transform: translateY(-300vh);}
-        }*/
     
     .logo_text {
-        color: rgb(200, 77, 0);
+        color: rgb(53, 0, 200);
         font-weight: 600;
         text-align: center;
         font-size: 30px;
         font-family: Hack, sans-serif;
         text-transform: uppercase;
-        background: linear-gradient(90deg, #000, rgb(200, 77, 0), #000);
+        background: linear-gradient(90deg, #000, rgb(53, 0, 200), #000);
         letter-spacing: 5px;
         -webkit-background-clip: text;
         background-clip: text;
