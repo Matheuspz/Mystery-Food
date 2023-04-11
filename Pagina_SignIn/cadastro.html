@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mystery Food</title>
     <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <script src="script_cadastro.js"></script>
+    <style>
+        .errado {
+            background-color: lightcoral;
+        }
+
+        .certo {
+            background-color: lightgreen;
+        }
+    </style>
 </head>
 <body>
     <div class="D1">
@@ -19,22 +29,21 @@
        <div class="Entrar">
         <br> 
             <legend>Faça o Cadastro</legend>
-            <form class="cadastro">
-                <br>
-                <input type="text" class="caixa_larga" id="E-mail" placeholder="E-mail" required><br>
-                <input type="text" class="caixa_larga" id="telefone" placeholder="Telefone"required><br>
-                <input type="text" class="caixa_larga" id="cpf" placeholder="CPF"required><br>
-                <input type="password" class="caixa_larga" id="senha" placeholder="Senha"required><br>
-                <input type="password" class="caixa_larga" id="conf_senha" placeholder="Confirmar Senha"required>
-                <br>
-                <div class="enlete">
-                    <button onclick="Validar();" class="butao"> Enviar </button>
-                    <button onclick="Limpar();" class="butao"> Limpar </button>
-                </div>
-                <br>
-            </form>
-            
-            
+            <br>
+            <input type="text" class="caixa_larga" id="e-mail" placeholder="E-mail" ><br>
+            <input type="text" class="caixa_larga" id="telefone" placeholder="Telefone"><br> 
+            <input type="text" class="caixa_larga" id="cpf" placeholder="CPF"><br> 
+            <input type="text" class="caixa_larga" id="senha" placeholder="Senha"><br>
+            <input type="text" class="caixa_larga" id="conf_senha" placeholder="Confirmar Senha">
+            <div class="mostrar_senha">
+                <input type="checkbox" onclick="myFunction()">Mostrar Senha
+            </div>
+            <br> <br>
+            <div class="enlete">
+                <button onclick="Validar();" class="butao"> Enviar </button>
+                <button onclick="Limpar();" class="butao"> Limpar </button>
+            </div>
+            <br>
        </div>
     </div>
     

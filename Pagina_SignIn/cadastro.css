@@ -12,7 +12,6 @@ body
 
 .D1
 {
-    
     width: 100%;
     height: 100vh;
     position: relative;
@@ -40,6 +39,10 @@ font-family: sans-serif;
 
 .Entrar
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 25%;
     background-color: rgb(21, 124, 221);
     left: 925px;
@@ -89,7 +92,7 @@ legend
     top: 80px;
     left: 87px;
 }
-.enlete
+.enlete /* Entrar e Delete */
 {
     display: flex;
     justify-content: space-between;
@@ -121,4 +124,13 @@ background-color: #ffff;
     position: relative;
     top:75px;
     left: 45px;
+}
+
+.mostrar_senha {
+    width: 71.5%;
+    height: 20px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 }
