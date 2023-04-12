@@ -1,3 +1,7 @@
+function mudar_pagina() {
+    location.href = "../PaginaPrincipal_LOGADO/pagina_principal-user.html";
+}
+
 function Validar()
 {
 
@@ -24,10 +28,8 @@ function Validar()
     if (var_senha == true)
     {
         alert(var_senha) ;
-        if (var_senha == true) {
-            senha.classList.remove('errado')
-            senha.classList.add('certo')
-        }  
+
+        mudar_pagina();
     }
 }
 
