@@ -19,22 +19,22 @@ body
 
 .circulo
 {
-width: 1200px;
-height: 1200px;
-background-color: rgb(103, 145, 201);   
-border-radius: 1000px;
-position: relative;
-top: -390px;
-left: -190px;
-display: flex;
-justify-content: center;
-justify-items: center;
-align-items: center;
-align-content: center;
-flex-direction: column;
-color: rgb(255, 255, 255);
-font-size: 80px;
-font-family: sans-serif;
+    width: 1200px;
+    height: 1200px;
+    background-color: rgb(103, 145, 201);   
+    border-radius: 1000px;
+    position: relative;
+    top: -390px;
+    left: -190px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    font-family: sans-serif;
 }
 
 .Entrar
@@ -105,12 +105,12 @@ legend
 
 .butao
 {
-width: 25%;
-height: 30px;
-border-color: black;
-border-width: 2px;
-border-style: solid;
-background-color: #ffff;
+    width: 25%;
+    height: 30px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #ffff;
 
 }
 .butao:hover

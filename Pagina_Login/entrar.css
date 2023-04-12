@@ -38,6 +38,10 @@ font-family: sans-serif;
 }
 .Entrar
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 25%;
     background-color: rgb(21, 124, 221);
     left: 925px;
@@ -101,7 +105,7 @@ legend
 
 .butao
 {
-width: 25%;
+width: 40%;
 height: 30px;
 border-color: black;
 border-width: 2px;

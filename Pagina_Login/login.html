@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mystery Food</title>
     <link rel="stylesheet" type="text/css" href="entrar.css">
+    <script src="script_login.js"></script>
+    <style>
+        .errado {
+            background-color: lightcoral;
+        }
+
+        .certo {
+            background-color: lightgreen;
+        }
+    </style>
 </head>
 <body>
     <div class="D1">
@@ -17,19 +27,15 @@
        <div class="Entrar">
         <br> 
             <legend>ENTRAR</legend>
-            <form class="cadastro">
                 <br>
-                <input type="text" class="caixa_larga" id="E-mail" placeholder="E-mail" required><br>
-                <input type="password" class="caixa_larga" id="Senha" placeholder="Senha"required><br>
+                <input type="text" class="caixa_larga" id="email" placeholder="E-mail" required> <br> 
+                <input type="password" class="caixa_larga" id="senha" placeholder="Senha"required> <br> 
                 <br>
                 <div class="enlete">
-                    <input type="reset" class="butao" value="Limpar">
-                    <input type="submit" class="butao" value="Enviar">
+                    <button onclick="Validar();" class="butao"> Enviar </button>
+                    <button onclick="Limpar();" class="butao"> Limpar </button>
                 </div>
                 <br>
-            </form>
-            
-            
        </div>
     </div>
     
