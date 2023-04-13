@@ -19,7 +19,7 @@ body {
             background-color: #0c4fa0;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
             .cabecalho_esq{
@@ -208,11 +208,8 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-items: center;
-            align-content: center;
-            justify-content: space-around;
-            color: #ffff;
-            font-size:1.7rem;
+            justify-content: center;
+            font-size:1.6rem;
             font-family: sans-serif;
 
         }
@@ -220,16 +217,13 @@ body {
         {
             height: 22vh;
             width: 22%;
-            background-color: #ff0000;  
+            background-color: #c20101;  
             border-radius: 20px;
             border: 5px solid #083872;
             box-shadow: 1px 1px 6px black;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-items: center;
-            align-content: center;
-            justify-content: space-around;
             color: #ffff;
             font-size:1.7rem;
             font-family: sans-serif;
@@ -266,13 +260,36 @@ body {
             align-items: center;
             justify-items: center;
             align-content: center;
-            justify-content: space-around;
+            justify-content: center; 
             color: #ffff;
             font-size:1.7rem;
             font-family: sans-serif;
         } 
-        .caxias
+        .simples_caixa
         {
-            width: 10vw;
+            width: 6vw;
         }
+        .dupla_caixa
+        {
+            width: 7.6vw;
+        }
+        .tripla_caixa
+        {
+            width: 7.5vw;
+        }
+        .caixona
+        {
+            width: 8vw;
+        }
+        .info a 
+        {
+            color: #ffff;
+            text-decoration: none;
+        }
+        .info a:hover
+        {
+            color:#20a6ff;
+        }
+        
+        
         
