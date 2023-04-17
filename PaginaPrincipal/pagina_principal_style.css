@@ -30,6 +30,7 @@ body {
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
+                
             }
 
                 .logo {
@@ -41,7 +42,10 @@ body {
                     border-radius: 10px;
                     background-color: #0c4fa0;
                 }
-
+                .button_logo:hover {
+                    border-radius: 10px;
+                    background-color: #0099ff;
+                }
                 .button_inicio {  
                     height: 5vh;
                     font-size: 20px;
@@ -81,7 +85,6 @@ body {
                 padding: 5px;
                 width: 20%;
                 height: 80px;
-
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
@@ -184,7 +187,7 @@ body {
                     border-radius: 5px;
                     border: none;
                     background-color: #2e78d1;
-                    font-size: 25px;
+                    font-size: 20px;
                     font-family: sans-serif;
                     font-weight: 500;
                     color: #ffff;
