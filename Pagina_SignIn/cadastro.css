@@ -133,4 +133,6 @@ legend
     display: flex;
     flex-direction: row;
     justify-content: left;
+    color: #ffff;
+    font-family: sans-serif;
 }
