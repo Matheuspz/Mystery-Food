@@ -35,7 +35,7 @@ body {
         -webkit-text-fill-color: transparent;
         background-repeat: no-repeat;
         background-size: 80%;
-        animation: 4s 2 brilho linear, 20s sumir;      /* MUDAR PARA 5s , 25s */
+        animation: 4s 2 brilho linear, 20s sumir;    
         animation-fill-mode: forwards;
     }
 
