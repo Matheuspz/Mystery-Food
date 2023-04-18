@@ -27,8 +27,6 @@ function Validar()
 
     if (var_senha == true)
     {
-        alert(var_senha) ;
-
         mudar_pagina();
     }
 }
