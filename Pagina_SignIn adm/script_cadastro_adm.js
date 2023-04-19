@@ -1,5 +1,5 @@
 function Validar()
-{   //expressao_e-mail = /^[a-z]+@gmail.com$/g;
+{
     expressao_cpf = /^[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$/g ;
     expressao_telefone = /^\([0-9]{2}\) [0-9] [0-9]{4}-[0-9]{4}$/g ;
     
