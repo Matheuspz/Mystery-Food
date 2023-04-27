@@ -10,4 +10,4 @@
 
     // Para voltar no formulário:
     header("Location: cadastro.html");
-?>
+?> 
