@@ -28,23 +28,22 @@
 
        <div class="Entrar">
         <br> 
-            <legend>Faça o Cadastro</legend>
-            <br>
-            <input type="text" class="caixa_larga" id="e-mail" placeholder="E-mail" ><br>
-            <input type="text" class="caixa_larga" id="telefone" placeholder="Telefone"><br> 
-            <input type="text" class="caixa_larga" id="cpf" placeholder="CPF"><br> 
-            <input type="password" class="caixa_larga" id="senha" placeholder="Senha"><br>
-            <input type="password" class="caixa_larga" id="conf_senha" placeholder="Confirmar Senha">
-            <!-- <div class="mostrar_senha">
-                <input type="checkbox" onclick="myFunction()">Mostrar Senha
-            </div> -->
-            <br> <br>
-            <div class="enlete"><!--Enviar e delete-->
-                <button onclick="Limpar();" class="butao"> Limpar </button>
-                <button onclick="Validar();" class="butao"> Enviar </button>
-                
-            </div>
-            <br>
+            <form action="inserir.php" method="post">
+                <legend>Faça o Cadastro</legend>
+                <br>
+                <input type="text" class="caixa_larga" id="e-mail" placeholder="E-mail" name="email"><br>
+                <input type="text" class="caixa_larga" id="telefone" placeholder="Telefone" name="telefone"><br> 
+                <input type="text" class="caixa_larga" id="cpf" placeholder="CPF" name="cpf"><br> 
+                <input type="password" class="caixa_larga" id="senha" placeholder="Senha" name="senha"><br>
+                <input type="password" class="caixa_larga" id="conf_senha" placeholder="Confirmar Senha">
+
+                <br> <br>
+                <div class="enlete"> <!--Enviar e deletar-->
+                    <button onclick="Limpar();" class="butao"> Limpar </button>
+                    <input type="submit" class="butao" value="SUBMITAR">
+                </div>
+                <br>
+            </form>
        </div>
     </div>
     

@@ -23,8 +23,6 @@ function Validar()
 
     if (resposta_cpf == false || resposta_telefone == false || senha_confirmada == false)
     {
-        alert("DADOS INVALIDOS") ;
-
         if (resposta_cpf == false) {
             cpf.classList.remove('certo')
             cpf.classList.add('errado')
