@@ -28,19 +28,19 @@
 
        <div class="Entrar">
         <br> 
-            <form action="inserir.php" method="post">
+            <form action="crud.php" method="post">
                 <legend>Faça o Cadastro</legend>
                 <br>
                 <input type="text" class="caixa_larga" id="e-mail" placeholder="E-mail" name="email"><br>
                 <input type="text" class="caixa_larga" id="telefone" placeholder="Telefone" name="telefone"><br> 
                 <input type="text" class="caixa_larga" id="cpf" placeholder="CPF" name="cpf"><br> 
                 <input type="password" class="caixa_larga" id="senha" placeholder="Senha" name="senha"><br>
-                <input type="password" class="caixa_larga" id="conf_senha" placeholder="Confirmar Senha">
+                <input type="password" class="caixa_larga" id="conf_senha"  onkeyup='validarSenha();' placeholder="Confirmar Senha">
 
                 <br> <br>
                 <div class="enlete"> <!--Enviar e deletar-->
-                    <button onclick="Limpar();" class="butao"> Limpar </button>
-                    <input type="submit" class="butao" value="SUBMITAR">
+                    <button onclick="Limpar();" type="button" class="butao"> Limpar </button>
+                    <input type="submit" class="butao" value="pronto" name="inserir">
                 </div>
                 <br>
             </form>
